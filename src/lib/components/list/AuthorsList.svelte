@@ -5,7 +5,6 @@
   export let textTailwind = 'text-base font-semibold text-purple-500 transition hover:text-purple-600';
 
   const authors = searchAuthor(author_id).split(", ");
-  console.log(authors);
 </script>
 
 <p title={title ? authors.join(', ') : null} class="line-clamp-1">
