@@ -35,8 +35,11 @@
 </div>
 
 <ul
-  class="mt-8 p-4 border grid grid-cols-[repeat(3,_250px)] gap-y-12 justify-between w-full"
+  class="box-content min-h-[150px] mt-8 p-4 border grid grid-cols-[repeat(3,_250px)] gap-y-12 justify-between w-full"
 >
+  {#if list.length === 0}
+    <p>Nenhum artigo foi encontrado...</p>
+  {/if}
   {#each list as { id, title, abstract, author_id } (id)}
     <NormalElement {id} {title} {abstract} {author_id} />
   {/each}

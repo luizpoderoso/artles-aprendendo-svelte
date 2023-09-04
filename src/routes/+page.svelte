@@ -10,9 +10,9 @@
 </script>
 
 <Phrase />
-<p class="ml-1 text-xl">Artigos mais recentes:</p>
+<p class="ml-1 text-lg">Artigos mais recentes:</p>
 <ul
-  class="mt-2 pl-2 inline-flex items-center w-full h-[180px] space-x-16 border-y"
+  class="mt-1 pl-2 inline-flex items-center w-full h-[180px] space-x-16 border-y"
 >
   {#each articles as { id, title, abstract, author_id } (id)}
     <NormalElement {id} {title} {abstract} {author_id} />
