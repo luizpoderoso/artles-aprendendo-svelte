@@ -5,6 +5,6 @@ export const links = [
   },
   {
     text: 'Artigos',
-    href: '/artigos'
+    href: '/articles'
   }
 ];
