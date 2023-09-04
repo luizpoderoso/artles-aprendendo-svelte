@@ -6,10 +6,8 @@ import Header from "$lib/layout/Header.svelte";
   const px = 'px-40';
 </script>
 
-<div id="root" class="relative grid grid-rows-[100px_1fr] w-screen h-screen overflow-hidden">
+<div id="root" class="relative w-screen h-screen overflow-y-auto overflow-x-hidden">
   <Header {px} />
-  <div class="overflow-y-auto">
-    <slot />
-    <Footer />
-  </div>
+  <slot />
+  <Footer />
 </div>

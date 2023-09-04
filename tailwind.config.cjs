@@ -9,8 +9,6 @@ const config = {
     fontFamily: {
       'girl_lova': ['Girl lova', 'sans-serif']
     },
-    extend: {
-    },
   },
 
   plugins: [forms, typography],
