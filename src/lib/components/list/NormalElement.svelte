@@ -1,5 +1,6 @@
 <script>
   import {searchAuthor} from '../../functions/authorsFunctions';
+  import AuthorsList from './AuthorsList.svelte';
 
   export let id;
   export let title;
@@ -22,10 +23,5 @@
   >
     {abstract}
   </p>
-  <a
-    title={searchAuthor(author_id)}
-    href="/authors/{author_id}"
-    class="transition hover:text-purple-400 absolute left-1 bottom-0 line-clamp-1"
-    >{searchAuthor(author_id)}
-  </a>
+  <AuthorsList {author_id} textTailwind="transition hover:text-purple-400" title={true} />
 </li>

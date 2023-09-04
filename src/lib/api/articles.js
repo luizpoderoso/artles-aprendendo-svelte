@@ -2,7 +2,7 @@ export const articles = [
   {
     id: '2772:nova_sociologia_urbana_greve',
     title: 'Nova Sociologia Urbana: Greve',
-    abstract: 'No texto, o aluno Luiz Poderoso escreve sobre greves no ambiente urbano, utilizando a metodologia neomarxista inaugarada com a nova sociologia urbana.',
+    abstract: 'No texto, utilizando a metodologia neomarxista inaugarada com a nova sociologia urbana, o aluno Luiz Poderoso disserta sobre greves no ambiente urbano de Sergipe.',
     author_id: [2772]
   },
   {
