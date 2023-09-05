@@ -3,7 +3,7 @@
   import { links } from "$lib/api/links";
 </script>
 
-<ul class="tracking-wider inline-flex items-center space-x-20">
+<ul class="tracking-wider inline-flex items-center space-x-16">
   {#each links as link}
     <li>
       <a

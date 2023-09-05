@@ -1,5 +1,4 @@
 <script>
-  import {searchAuthor} from '../../functions/authorsFunctions';
   import AuthorsList from './AuthorsList.svelte';
 
   export let id;
@@ -19,7 +18,7 @@
   >
   <p
     title="{abstract}"
-    class="h-max text-xs my-2 mx-1 px-1 py-1 text-justify line-clamp-5 overflow-ellipsis border-y"
+    class="text-xs my-2 mx-1 px-1 py-1 text-justify line-clamp-5 overflow-ellipsis border-y"
   >
     {abstract}
   </p>
