@@ -5,11 +5,8 @@
 
   export let data;
   let articles = [...data.articles];
-
-  // list working
-  let listStore = writable([...articles]);
-  let list;
-  $: listStore.subscribe(value => list = [...value]);
+  // can be filtered
+  let list = writable([...articles]);
 </script>
 
 <div class="mt-4 relative inline-flex w-full items-center justify-between">
@@ -17,16 +14,18 @@
     Artigos Publicados
   </h2>
 
-  <Search {articles} {listStore} />
+  <Search {articles} {list} />
 </div>
 
 <ul
   class="mt-8 p-4 border grid grid-cols-[repeat(3,_250px)] gap-y-12 justify-between w-full"
 >
-  {#if list.length === 0}
+  <!-- if the list is empty -->
+  {#if $list.length === 0}
     <p class="h-[150px]">Nenhum artigo foi encontrado...</p>
   {/if}
-  {#each list as { id, title, abstract, author_id } (id)}
+  <!-- the list elements -->
+  {#each $list as { id, title, abstract, author_id } (id)}
     <NormalElement {id} {title} {abstract} {author_id} />
   {/each}
 </ul>

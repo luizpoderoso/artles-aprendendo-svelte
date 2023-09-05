@@ -2,13 +2,14 @@
   import AuthorsList from '$lib/components/list/AuthorsList.svelte';
 
   export let data;
-  const {title, author_id, abstract, id, releasedAt} = data.article;
+  const {title, category, author_id, abstract, id, releasedAt} = data.article;
 </script>
 
 <div class="absolute px-40 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border w-[100%] h-[450px]">
   <div class="w-full h-full py-4 relative flex flex-col justify-between">
     <div>
       <p>Título: <span class="text-purple-500 font-semibold">{title}</span></p>
+      <p>Categoria: <a href="/categories/{category}" class="transition text-purple-500 hover:text-purple-600 font-semibold">{category}</a></p>
       <p class="inline-flex">Autor{(author_id.length > 1) ? '(es)' : ''}:&nbsp;<AuthorsList {author_id} /></p>
       <p>Publicado em: <span class="font-semibold text-purple-500">{releasedAt}</span></p>
     </div>

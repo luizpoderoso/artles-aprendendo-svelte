@@ -2,14 +2,14 @@
   import { writable } from "svelte/store";
 
   // search filter
-  export let articles;
-  export let listStore = writable(articles);
+  export let articles = [];
+  export let list = writable(articles);
   let search = "";
 
   // need to be improved - add author search
   const searchKey = () => {
-    if (!search) return (listStore.set([...articles]));
-    listStore.set(articles.filter((article) =>
+    if (!search) return (list.set([...articles]));
+    list.set(articles.filter((article) =>
       article.title.toLowerCase().includes(search.toLowerCase())
         ? true
         : article.abstract.toLowerCase().includes(search.toLowerCase())

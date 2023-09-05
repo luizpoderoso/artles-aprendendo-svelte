@@ -4,12 +4,12 @@ import { articlesList } from "$store/stores";
 export function load({params}) {
   let articleFound;
 
+  // get the right article
   articlesList.subscribe(value => {
     articleFound = value.find(article => article.id === params.article);
   });
 
   if (!articleFound) throw error(404);
-
   return {
     article: articleFound
   };

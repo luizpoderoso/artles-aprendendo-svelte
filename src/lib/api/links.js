@@ -6,5 +6,9 @@ export const links = [
   {
     text: 'Artigos',
     href: '/articles'
+  },
+  {
+    text: 'Categorias',
+    href: '/categories'
   }
 ];
