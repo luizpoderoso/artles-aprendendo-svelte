@@ -10,7 +10,7 @@
 </script>
 
 <li
-  class="relative w-[250px] h-[150px] p-1 rounded shadow-inner text-sm text-slate-500 bg-slate-50 transition duration-300 hover:bg-slate-100"
+  class="relative min-w-[250px] max-w-min h-[150px] p-1 rounded shadow-inner text-sm text-slate-500 bg-slate-50 transition duration-300 hover:bg-slate-100"
 >
   <a
     {title}

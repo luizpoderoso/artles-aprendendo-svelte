@@ -10,7 +10,7 @@
 </script>
 
 <div class="mt-4 relative inline-flex w-full items-center justify-between">
-  <h2 class="ml-1 text-xl tracking-wide uppercase font-semibold mt-8">
+  <h2 class="w-0 h-0 invisible md:visible md:w-fit md:h-fit ml-1 text-xl tracking-wide uppercase font-semibold mt-8">
     Artigos Publicados
   </h2>
 
@@ -18,7 +18,7 @@
 </div>
 
 <ul
-  class="mt-8 p-4 border grid grid-cols-[repeat(3,_250px)] gap-y-12 justify-between w-full"
+  class="mt-8 p-4 border flex flex-col items-center md:grid md:grid-cols-[repeat(2,_250px)] lg:grid-cols-[repeat(3,_250px)] 2xl:grid-cols-[repeat(4,_250px)] md:gap-y-12 space-y-6 md:space-y-0 justify-between w-full"
 >
   <!-- if the list is empty -->
   {#if $list.length === 0}
