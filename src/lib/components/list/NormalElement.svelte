@@ -2,9 +2,11 @@
   import AuthorsList from './AuthorsList.svelte';
 
   export let id;
+  export let category;
+  export let releasedAt;
   export let title;
   export let abstract;
-  export let author_id;
+  export let authors;
 </script>
 
 <li
@@ -22,5 +24,5 @@
   >
     {abstract}
   </p>
-  <AuthorsList {author_id} textTailwind="transition hover:text-purple-400" title={true} />
+  <AuthorsList {authors} textTailwind="transition hover:text-purple-400" title={true} />
 </li>

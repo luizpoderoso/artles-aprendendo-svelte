@@ -14,7 +14,7 @@
         ? true
         : article.abstract.toLowerCase().includes(search.toLowerCase())
         ? true
-        : false
+        : article.authors.toLowerCase().includes(search.toLowerCase())
     ));
   };
 </script>

@@ -23,9 +23,10 @@
   <!-- if the list is empty -->
   {#if $list.length === 0}
     <p class="h-[150px]">Nenhum artigo foi encontrado...</p>
+  {:else}
+    <!-- the list elements -->
+    {#each $list as article (article.id)}
+      <NormalElement {...article} />
+    {/each}
   {/if}
-  <!-- the list elements -->
-  {#each $list as { id, title, abstract, author_id } (id)}
-    <NormalElement {id} {title} {abstract} {author_id} />
-  {/each}
 </ul>

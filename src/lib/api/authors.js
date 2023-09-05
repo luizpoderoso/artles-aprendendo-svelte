@@ -1,14 +1,11 @@
 export const authors = [
   {
-    id: 2772,
-    name: 'Luiz Poderoso'
+    name: 'Luiz Cristóvão Rezende Poderoso'
   },
   {
-    id: 1,
     name: 'Sâmia Suyane Cunha Coelho'
   },
   {
-    id: 2,
     name: 'Perci Coelho de Souza'
   }
 ];
